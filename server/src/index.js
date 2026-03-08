@@ -19,6 +19,7 @@ app.get('/api/health', (req, res) => {
 // Routes (to be added)
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/transactions', require('./routes/transactions'));
+app.use('/api/categories', require('./routes/categories'));
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
