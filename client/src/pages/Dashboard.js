@@ -4,6 +4,7 @@ import { useAuth } from '../context/AuthContext';
 import SummaryCard from '../components/Dashboard/SummaryCard';
 import SpendingChart from '../components/Charts/SpendingChart';
 import CategoryPieChart from '../components/Charts/CategoryPieChart';
+import BudgetTracker from '../components/Dashboard/BudgetTracker';
 import useTransactions from '../hooks/useTransactions';
 
 const Dashboard = () => {
@@ -43,6 +44,7 @@ const Dashboard = () => {
               <SpendingChart transactions={transactions} />
               <CategoryPieChart transactions={transactions} />
             </div>
+            <BudgetTracker transactions={transactions} />
             <div className="recent-transactions">
               <h2>Recent Transactions</h2>
               {transactions.length === 0 ? (

@@ -343,3 +343,100 @@ button[type='submit']:disabled {
   color: #374151;
   font-size: 1rem;
 }
+
+/* BUDGET TRACKER */
+.budget-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.budget-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.budget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.budget-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.budget-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.budget-amount {
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.budget-amount:hover {
+  color: #6366f1;
+}
+
+.budget-bar-bg {
+  width: 100%;
+  height: 8px;
+  background: #f3f4f6;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.budget-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.4s ease;
+}
+
+.budget-warning {
+  font-size: 0.75rem;
+  color: #ef4444;
+}
+
+.budget-edit {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.budget-edit input {
+  width: 100px;
+  padding: 0.3rem 0.5rem;
+  border: 1.5px solid #6366f1;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.budget-edit button {
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.budget-edit button:first-of-type {
+  background: #6366f1;
+  color: white;
+}
+
+.budget-edit button:last-of-type {
+  background: #f3f4f6;
+  color: #6b7280;
+}
