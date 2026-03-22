@@ -7,6 +7,10 @@ A full stack personal finance dashboard built with React, Node.js, and PostgreSQ
 ![Node.js](https://img.shields.io/badge/Node.js-18-339933?logo=node.js)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-4169E1?logo=postgresql)
 
+## 🌐 Live Demo
+
+**[View Live App](https://personal-finance-tracker-seven-amber.vercel.app/)** | **[API Health Check](https://personal-finance-tracker-production-55ed.up.railway.app/api/health)**
+
 ## ✨ Features
 
 - 🔐 JWT-based authentication (register & login)
