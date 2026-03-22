@@ -9,7 +9,7 @@ const Transactions = () => {
   const { logout } = useAuth();
   const navigate = useNavigate();
   const [filter, setFilter] = useState('all');
-  const { transactions, setTransactions, loading, error, refetch } = useTransactions();
+  const { transactions, loading, error, refetch } = useTransactions();
 
   const handleLogout = () => {
     logout();

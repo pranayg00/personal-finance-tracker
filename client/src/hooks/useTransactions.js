@@ -31,8 +31,9 @@ const useTransactions = (filters = {}) => {
     }
   };
 
-  useEffect(() => {
+ useEffect(() => {
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters.month, filters.year, filters.type]);
 
   return { transactions, summary, loading, error, refetch: fetchData };
